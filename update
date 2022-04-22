@@ -1,0 +1,20 @@
+PHPUnit 8.5.26 #StandWithUkraine
+
+.EE                                                                 3 / 3 (100%)
+
+Time: 103 ms, Memory: 6.00 MB
+
+There were 2 errors:
+
+1) ShopsTest::testCreate
+Error: Cannot use object of type stdClass as array
+
+/var/www/eurosoft/eurosoft_task/api/tests/ShopsTest.php:43
+
+2) ShopsTest::testUpdate
+Error: Cannot use object of type stdClass as array
+
+/var/www/eurosoft/eurosoft_task/api/tests/ShopsTest.php:62
+
+ERRORS!
+Tests: 3, Assertions: 3, Errors: 2.
