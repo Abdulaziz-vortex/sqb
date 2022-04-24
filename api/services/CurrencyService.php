@@ -42,7 +42,7 @@ class CurrencyService extends BaseObject
 
             $valuteId = $params['valuteId'] ? ['valuteId' => $params['valuteId']] : null;
 
-            $data = $this->resource
+            return $this->resource
                 ->getAll()
                 ->from($params['from'])
                 ->to($params['to'])
@@ -50,8 +50,6 @@ class CurrencyService extends BaseObject
                 ->pageSize(10)
                 ->andWhere($valuteId)
                 ->data();
-
-            return $data;
 
         } else {
             print_r($this->validator->getErrors());
