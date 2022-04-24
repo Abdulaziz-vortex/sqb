@@ -10,13 +10,13 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
-    //'defaultRoute' => 'shop',
+    'defaultRoute' => 'currency',
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-api',
-            'baseUrl' => '/restapi',
+//            'baseUrl' => '/api',
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
@@ -41,19 +41,10 @@ return [
         ],
 
         'urlManager' => [
-            'enablePrettyUrl' => true,
+            'enablePrettyUrl' => false,
             'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                [
-                    'class' => 'yii\rest\UrlRule',
-                    'controller' => ['shop', 'products'],
-                    'extraPatterns' => [
-                        'POST shops' => 'shop/create',
-                        'PUT PATCH shops' => 'shops/update',
-                        'DELETE shops' => 'shops/delete',
-                    ],
-                ],
             ],
         ],
 

@@ -1,0 +1,2195 @@
+2022-04-22 16:11:18 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php:721
+Stack trace:
+#0 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(721): PDO->__construct()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(636): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\controllers\MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#17 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#18 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#19 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#20 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#21 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php:647
+Stack trace:
+#0 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(1066): yii\db\Connection->open()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Connection.php(1053): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\controllers\MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#13 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#16 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#17 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#18 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#19 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2022-04-22 16:11:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '116x32766 (116x31)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650633076.2767
+    'REQUEST_TIME' => 1650633076
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'create_currency_table'
+    ]
+    'argc' => 3
+]
+2022-04-22 16:21:05 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'console\controllers\SeederController' in file: C:\OpenServer\domains\sqb/console/controllers/SeederController.php. Namespace missing? in C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(661): class_exists()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(620): yii\base\Module->createControllerByID()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(546): yii\base\Module->createController()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:21:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650633665.453
+    'REQUEST_TIME' => 1650633665
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:28:40 [-][-][-][error][Error] Error: Class 'http\Client' not found in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:11
+Stack trace:
+#0 [internal function]: console\controllers\SeederController->actionIndex()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:28:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634120.2526
+    'REQUEST_TIME' => 1650634120
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:30:20 [-][-][-][error][Error] Error: Object of class GuzzleHttp\Psr7\Response could not be converted to string in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:16
+Stack trace:
+#0 [internal function]: console\controllers\SeederController->actionIndex()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:30:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634220.6109
+    'REQUEST_TIME' => 1650634220
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:31:19 [-][-][-][error][Error] Error: Call to undefined method GuzzleHttp\Psr7\Response::send() in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:14
+Stack trace:
+#0 [internal function]: console\controllers\SeederController->actionIndex()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:31:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634279.639
+    'REQUEST_TIME' => 1650634279
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:32:07 [-][-][-][error][TypeError] TypeError: Argument 1 passed to GuzzleHttp\Client::send() must implement interface Psr\Http\Message\RequestInterface, instance of GuzzleHttp\Psr7\Response given, called in C:\OpenServer\domains\sqb\console\controllers\SeederController.php on line 15 and defined in C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php:126
+Stack trace:
+#0 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(15): GuzzleHttp\Client->send()
+#1 [internal function]: console\controllers\SeederController->actionIndex()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#9 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#10 {main}
+2022-04-22 16:32:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634327.6554
+    'REQUEST_TIME' => 1650634327
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:38:46 [-][-][-][error][TypeError] TypeError: Argument 1 passed to GuzzleHttp\Client::send() must implement interface Psr\Http\Message\RequestInterface, instance of GuzzleHttp\Psr7\Response given, called in C:\OpenServer\domains\sqb\console\controllers\SeederController.php on line 15 and defined in C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php:126
+Stack trace:
+#0 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(15): GuzzleHttp\Client->send()
+#1 [internal function]: console\controllers\SeederController->actionIndex()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#9 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#10 {main}
+2022-04-22 16:38:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634726.5937
+    'REQUEST_TIME' => 1650634726
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:39:18 [-][-][-][error][TypeError] TypeError: Argument 1 passed to GuzzleHttp\Client::send() must implement interface Psr\Http\Message\RequestInterface, instance of GuzzleHttp\Psr7\Response given, called in C:\OpenServer\domains\sqb\console\controllers\SeederController.php on line 15 and defined in C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php:126
+Stack trace:
+#0 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(15): GuzzleHttp\Client->send()
+#1 [internal function]: console\controllers\SeederController->actionIndex()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#9 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#10 {main}
+2022-04-22 16:39:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634757.8555
+    'REQUEST_TIME' => 1650634757
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:39:50 [-][-][-][error][Error] Error: Object of class GuzzleHttp\Psr7\Response could not be converted to string in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:17
+Stack trace:
+#0 [internal function]: console\controllers\SeederController->actionIndex()
+#1 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:39:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650634790.5895
+    'REQUEST_TIME' => 1650634790
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 16:46:07 [-][-][-][error][ParseError] ParseError: syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:18
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload()
+#1 [internal function]: spl_autoload_call()
+#2 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(661): class_exists()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(620): yii\base\Module->createControllerByID()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(546): yii\base\Module->createController()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#9 {main}
+2022-04-22 16:46:07 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650635167.8217
+    'REQUEST_TIME' => 1650635167
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 17:28:12 [-][-][-][error][GuzzleHttp\Exception\ConnectException] GuzzleHttp\Exception\ConnectException: cURL error 28: Failed to connect to www.cbr.ru port 80: Timed out (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php:200
+Stack trace:
+#0 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php(155): GuzzleHttp\Handler\CurlFactory::createRejection()
+#1 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php(105): GuzzleHttp\Handler\CurlFactory::finishError()
+#2 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlHandler.php(43): GuzzleHttp\Handler\CurlFactory::finish()
+#3 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\Proxy.php(28): GuzzleHttp\Handler\CurlHandler->__invoke()
+#4 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\Proxy.php(51): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}()
+#5 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\PrepareBodyMiddleware.php(37): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}()
+#6 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Middleware.php(29): GuzzleHttp\PrepareBodyMiddleware->__invoke()
+#7 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\RedirectMiddleware.php(70): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#8 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Middleware.php(59): GuzzleHttp\RedirectMiddleware->__invoke()
+#9 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\HandlerStack.php(71): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#10 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(351): GuzzleHttp\HandlerStack->__invoke()
+#11 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(162): GuzzleHttp\Client->transfer()
+#12 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(182): GuzzleHttp\Client->requestAsync()
+#13 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(18): GuzzleHttp\Client->request()
+#14 [internal function]: console\controllers\SeederController->actionIndex()
+#15 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#16 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#18 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#19 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#20 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#21 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#22 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#23 {main}
+2022-04-22 17:27:50 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650637670.9802
+    'REQUEST_TIME' => 1650637670
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-22 17:29:02 [-][-][-][error][GuzzleHttp\Exception\ConnectException] GuzzleHttp\Exception\ConnectException: cURL error 28: Failed to connect to www.cbr.ru port 80: Timed out (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) in C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php:200
+Stack trace:
+#0 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php(155): GuzzleHttp\Handler\CurlFactory::createRejection()
+#1 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php(105): GuzzleHttp\Handler\CurlFactory::finishError()
+#2 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\CurlHandler.php(43): GuzzleHttp\Handler\CurlFactory::finish()
+#3 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\Proxy.php(28): GuzzleHttp\Handler\CurlHandler->__invoke()
+#4 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Handler\Proxy.php(51): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}()
+#5 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\PrepareBodyMiddleware.php(37): GuzzleHttp\Handler\Proxy::GuzzleHttp\Handler\{closure}()
+#6 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Middleware.php(29): GuzzleHttp\PrepareBodyMiddleware->__invoke()
+#7 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\RedirectMiddleware.php(70): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#8 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Middleware.php(59): GuzzleHttp\RedirectMiddleware->__invoke()
+#9 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\HandlerStack.php(71): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#10 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(351): GuzzleHttp\HandlerStack->__invoke()
+#11 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(162): GuzzleHttp\Client->transfer()
+#12 C:\OpenServer\domains\sqb\vendor\guzzlehttp\guzzle\src\Client.php(182): GuzzleHttp\Client->requestAsync()
+#13 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(18): GuzzleHttp\Client->request()
+#14 [internal function]: console\controllers\SeederController->actionIndex()
+#15 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#16 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#18 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#19 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#20 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#21 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#22 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#23 {main}
+2022-04-22 17:28:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x000F05BA'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000A062C'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00330492'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '5912'
+    'ConEmuServerPID' => '9284'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650637720.8181
+    'REQUEST_TIME' => 1650637720
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:17:14 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: number_format() expects parameter 1 to be float, object given in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(37): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:17:13 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824233.8586
+    'REQUEST_TIME' => 1650824233
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:17:37 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: number_format() expects parameter 1 to be float, object given in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(37): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:17:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824257.1404
+    'REQUEST_TIME' => 1650824257
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:18:20 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: number_format() expects parameter 2 to be int, string given in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(37): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:18:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824300.4488
+    'REQUEST_TIME' => 1650824300
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:19:02 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Wrong parameter count for number_format() in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(37): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:19:02 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824342.2964
+    'REQUEST_TIME' => 1650824342
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:22:15 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Wrong parameter count for number_format() in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(32): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:22:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824535.1986
+    'REQUEST_TIME' => 1650824535
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]
+2022-04-24 21:24:16 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Wrong parameter count for number_format() in C:\OpenServer\domains\sqb\console\controllers\SeederController.php:33
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\sqb\console\controllers\SeederController.php(33): number_format()
+#2 [internal function]: console\controllers\SeederController->actionIndex()
+#3 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\sqb\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\sqb\yii(23): yii\base\Application->run()
+#11 {main}
+2022-04-24 21:24:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '239x32766 (239x56)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\User\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-BE3CIQR'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x005B0408'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x0048046A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001C00B0'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4804'
+    'ConEmuServerPID' => '8936'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'INTEL_DEV_REDIST' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\'
+    'LOCALAPPDATA' => 'C:\\Users\\User\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-BE3CIQR'
+    'MIC_LD_LIBRARY_PATH' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\compiler\\lib\\intel64_win_mic'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\User\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\User\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_7.4\\ext;c:\\openserver\\modules\\php\\PHP_7.4\\pear;c:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;c:\\openserver\\modules\\php\\PHP_7.4;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MariaDB-10.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_7.4'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_7.4\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_7.4\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a503'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-BE3CIQR'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-BE3CIQR'
+    'USERNAME' => 'User'
+    'USERPROFILE' => 'C:\\Users\\User'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1650824656.468
+    'REQUEST_TIME' => 1650824656
+    'argv' => [
+        0 => 'yii'
+        1 => 'seeder/index'
+    ]
+    'argc' => 2
+]

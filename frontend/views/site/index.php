@@ -1,53 +1,70 @@
 <?php
 
+use yii\grid\GridView;
+use yii\bootstrap4\ActiveForm;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
+use frontend\widgets\ChartWidget;
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'Sqb Bank task';
+
+$month = ArrayHelper::map($provider->query->asArray()->all(), 'id', 'date');
+$value = ArrayHelper::map($provider->query->asArray()->all(), 'id', 'value');
+
 ?>
 <div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
     <div class="body-content">
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        <?php
+        $form = ActiveForm::begin([
+            'method' => 'get',
+            'options' => [
+                'class' => 'input-group align-items-start'
+            ]
+        ]);
+        echo $form->field($model, 'from')->input('date')->label(false);
+        echo $form->field($model, 'to')->input('date')->label(false);
+        echo Html::submitButton("<i class='fa fa-filter mr-2'></i>".'фильтр', ['class' => 'btn btn-primary']);
+        echo Html::resetButton("<i class='fa fa-times mr-2'></i>".'очистить', ['class' => 'btn btn-danger']);
+        ActiveForm::end();
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+        ?>
+        <hr>
+        <?php
+        echo GridView::widget([
+            'dataProvider' => $provider,
+            'filterModel' => $model,
+            'columns' => [
+                'id',
+                'valuteId',
+                'numCode',
+                [
+                    'attribute' => 'charCode',
+                    'filter' => ArrayHelper::map(\common\models\CurrencySearch::find()->asArray()->groupBy('charCode')->all(), 'charCode', 'charCode')
+                ],
+                'value',
+                'name',
+                [
+                    'attribute' => 'date',
+                    'format' => ['date', 'php:Y-m-d']
+                ]
+            ]
+        ]);
 
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        echo \yii\bootstrap4\LinkPager::widget(['pagination' => $pages]);
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
+        ?>
 
     </div>
+
+    <?php
+    if ($has_chart) {
+        echo ChartWidget::widget(['month' => $month, 'value' => $value]);
+    }
+    ?>
+
+
 </div>
+
