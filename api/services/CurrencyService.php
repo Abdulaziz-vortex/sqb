@@ -52,7 +52,7 @@ class CurrencyService extends BaseObject
                 ->data();
 
         } else {
-            print_r($this->validator->getErrors());
+            return $this->validator->getErrors();
         }
     }
 
